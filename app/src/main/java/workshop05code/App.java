@@ -70,11 +70,23 @@ public class App {
         // let's get them to enter a word
 
         try (Scanner scanner = new Scanner(System.in)) {
+            while(true) {
             System.out.print("Enter a 4 letter word for a guess or q to quit: ");
             String guess = scanner.nextLine();
 
-            while (!guess.equals("q")) {
-                System.out.println("You've guessed '" + guess+"'.");
+            if (guess.equals("q")) {
+                System.out.println("Quit");
+                break;
+            }
+
+            if (guess.matches("^[a-z]{4}$")) {
+                System.out.println("Invalid input. Please enter exactly four lowercase letters (a-z).\n");
+                continue;  // Skip further checks and ask for input again
+            }
+
+            
+        System.out.println("You've guessed '" + guess + "'.");
+
 
                 if (wordleDatabaseConnection.isValidWord(guess)) { 
                     System.out.println("Success! It is in the the list.\n");
@@ -82,8 +94,6 @@ public class App {
                     System.out.println("Sorry. This word is NOT in the the list.\n");
                 }
 
-                System.out.print("Enter a 4 letter word for a guess or q to quit: " );
-                guess = scanner.nextLine();
             }
         } catch (NoSuchElementException | IllegalStateException e) {
             e.printStackTrace();

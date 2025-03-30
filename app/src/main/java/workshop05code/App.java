@@ -3,6 +3,7 @@ package workshop05code;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 //Included for the logging exercise
@@ -28,6 +29,10 @@ public class App {
     }
 
     private static final Logger logger = Logger.getLogger(App.class.getName());
+
+    public static void main(String[] args) {
+        
+    }
     // End code for logging exercise
     
     /**
@@ -79,8 +84,8 @@ public class App {
                 break;
             }
 
-            if (guess.matches("^[a-z]{4}$")) {
-                System.out.println("Invalid input. Please enter exactly four lowercase letters (a-z).\n");
+            if (!guess.matches("^[a-z]{4}$")) {
+                System.out.println("Invalid input. Please only use 4 lower case letters to guess.\n");
                 continue;  // Skip further checks and ask for input again
             }
 

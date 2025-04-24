@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "468a6fa4-6c66-4ec6-b45a-88eab4b563ea",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Player",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "544f749d-50c8-44bd-8d2c-4fe949237ddb",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "Data.txt",
@@ -280,6 +280,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -363,7 +364,6 @@
               ]
             },
             "id": "3f59029f-82ed-4706-b88b-7c84adbe198c",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "chessGame.db\n",
@@ -400,6 +400,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -483,7 +484,6 @@
               ]
             },
             "id": "3146f503-6391-4e60-abb4-cd2e5fffdaf9",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "App.java",
@@ -522,6 +522,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -605,7 +606,6 @@
               ]
             },
             "id": "376f844e-489a-4146-b4b0-1e05cb156664",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Board.java\n",
@@ -644,6 +644,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -727,7 +728,6 @@
               ]
             },
             "id": "86ebd6a6-be2b-44fb-a653-a5ecdb23938a",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Grid/Cell/Prompt.java",
@@ -763,6 +763,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -846,7 +847,6 @@
               ]
             },
             "id": "8f9bfefe-e330-43ff-8121-6830a26b8c8f",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "sqliteConnectionManager.java",
@@ -882,6 +882,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -965,7 +966,6 @@
               ]
             },
             "id": "4ab22535-453a-4f7b-a1ba-2b47a38ff050",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "moveProcessor.java",

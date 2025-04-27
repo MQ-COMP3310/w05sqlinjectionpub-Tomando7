@@ -258,7 +258,7 @@
           },
           {
             "position": {
-              "x": 1990,
+              "x": 1950,
               "y": 20
             },
             "size": {
@@ -744,8 +744,8 @@
           },
           {
             "position": {
-              "x": 2080,
-              "y": 160
+              "x": 2040,
+              "y": 120
             },
             "size": {
               "width": 170,
@@ -1221,7 +1221,12 @@
               "cell": "8f9bfefe-e330-43ff-8121-6830a26b8c8f",
               "port": "5107bffb-d7b4-4b68-b959-5577a8351722"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 2180,
+                "y": 330
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1420,17 +1425,53 @@
             ],
             "id": "41bcdfde-a762-4ae3-ab2c-11037cb197d4",
             "source": {
-              "x": 1950,
-              "y": 180
+              "x": 1970,
+              "y": 140
             },
             "target": {
-              "x": 2265,
-              "y": 170
+              "x": 2285,
+              "y": 130
             },
             "vertices": [
               {
-                "x": 2190,
-                "y": 80
+                "x": 2210,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "b18c956a-4add-431c-8218-ab825ed532a5",
+            "source": {
+              "x": 1990,
+              "y": 310
+            },
+            "target": {
+              "x": 2300,
+              "y": 290
+            },
+            "vertices": [
+              {
+                "x": 2180,
+                "y": 270
+              },
+              {
+                "x": 2210,
+                "y": 270
               }
             ]
           }
